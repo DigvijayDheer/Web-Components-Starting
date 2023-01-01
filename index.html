@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web Components</title>
+		<script src="tooltip.js"></script>
+		<script src="confirm-link.js"></script>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			html {
+				--color-primary: #a4e6fc;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<template id="tooltip-template"></template>
+		<p>
+			<dd-tooltip class="important" text="Web Components is a set of standards">
+				<span class="highlight">Web Components</span></dd-tooltip
+			>
+			are awesome!
+		</p>
+		<dd-tooltip>Another Component</dd-tooltip>
+		<a is="dd-confirm-link" href="https://www.google.com">Google</a>
+	</body>
+</html>
